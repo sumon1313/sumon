@@ -1,0 +1,65 @@
+//import AuthService from './service';
+import HttpError from '../../config/error';
+
+import { NextFunction, Request, Response } from 'express';
+import * as jwt from 'jsonwebtoken';
+import app from '../../config/server/server';
+import * as  UserService from './userService';
+
+
+export async function signup(req: Request, res: Response, next: NextFunction): Promise < void > {
+    
+    try {
+        const user = await UserService.createUser(req.body);
+        
+        const token: string = jwt.sign({ email: user.email }, app.get('secret'), {
+            expiresIn: '60m'
+        });
+        
+        res.json({
+            status: 200,
+            logged: true,
+            token: token,
+            message: 'Sign in successfull'
+        });
+    } catch (error) {
+        if (error.code === 500) {
+            return next(new HttpError(error.message.status, error.message));
+        }
+        res.json({
+            status: 400,
+            message: error.message
+        });
+    }
+}
+
+export async function login(req: Request, res: Response, next: NextFunction): Promise < void > {
+    
+    try {
+        let user = await UserService.getUserByEmail(req.body.EmailID, req.body.Password);
+        
+        if(!user){
+            throw new Error('Invalid password or email'); 
+        }
+        const token: string = jwt.sign({ email: user.EmailID }, app.get('secret'), {
+            expiresIn: '60m'
+        });
+        
+        res.json({
+            status: 200,
+            logged: true,
+            token: token,
+            users:user,
+            message: 'Sign in successfull'
+        });
+    } catch (error) {
+        if (error.code === 500) {
+            return next(new HttpError(error.message.status, error.message));
+        }
+        res.json({
+            status: 400,
+            logged: false,
+            message: error.message
+        });
+    }
+}

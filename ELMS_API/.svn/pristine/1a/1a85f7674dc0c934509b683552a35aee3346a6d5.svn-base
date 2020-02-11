@@ -1,0 +1,51 @@
+{
+  "_from": "@types/swagger-jsdoc@0.0.2",
+  "_id": "@types/swagger-jsdoc@0.0.2",
+  "_inBundle": false,
+  "_integrity": "sha512-6N4W5baJ7bV3q+urn4jMIzTzUMtdtYCKBCdu5BRfHSY1XTDGkvFCFEvs+lAdIy7VU/0LmKPvoZJ+wTPKayvKgA==",
+  "_location": "/@types/swagger-jsdoc",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@types/swagger-jsdoc@0.0.2",
+    "name": "@types/swagger-jsdoc",
+    "escapedName": "@types%2fswagger-jsdoc",
+    "scope": "@types",
+    "rawSpec": "0.0.2",
+    "saveSpec": null,
+    "fetchSpec": "0.0.2"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@types/swagger-jsdoc/-/swagger-jsdoc-0.0.2.tgz",
+  "_shasum": "0ffa705ffc0b7adb253be1fbff5e6d96523322dd",
+  "_spec": "@types/swagger-jsdoc@0.0.2",
+  "_where": "/home/amal/Javascript/Express/jwtTypescriptApi",
+  "bugs": {
+    "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Daniel Grove",
+      "url": "https://github.com/drGrove"
+    }
+  ],
+  "dependencies": {},
+  "deprecated": false,
+  "description": "TypeScript definitions for Swagger-JSDoc",
+  "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped#readme",
+  "license": "MIT",
+  "main": "",
+  "name": "@types/swagger-jsdoc",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DefinitelyTyped/DefinitelyTyped.git"
+  },
+  "scripts": {},
+  "typeScriptVersion": "2.2",
+  "typesPublisherContentHash": "d76315cfdaf5aad0118c28ce3d28802845df1583ec822fd55a4990fe795aa288",
+  "version": "0.0.2"
+}

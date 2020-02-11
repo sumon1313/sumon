@@ -1,0 +1,95 @@
+import * as Joi from 'joi';
+import userValidation from './userValidation';
+import db from '../../config/connection/connection';
+
+
+
+export async function createUser(body: any): Promise < any > {
+        try {
+            const validate: Joi.ValidationResult < any > = userValidation.createUser(body);
+
+            if (validate.error) {
+                throw new Error(validate.error.message);
+            }
+
+            const user: any = {
+                email: body.email,
+                password: body.password
+            };
+
+            let query:any;
+
+            db.query("SELECT * FROM Artists").then((users: any[]) => {
+                query= users[0];
+                console.log(users[0]);
+
+                // We don't need spread here, since only the results will be returned for select queries
+            })
+            
+            // const query: any = await UserModel.findOne({
+            //     email: body.email
+            // });
+
+            if (query) {
+                throw new Error('This email already exists');
+            }
+
+            const saved: any = await user.save();
+
+            return saved;
+        } catch (error) {
+            throw new Error(error);
+        }
+    }
+    
+export async function getUser(body: any): Promise < any > {
+        
+        let isMatched:boolean;
+        try {
+            //const validate: Joi.ValidationResult < any > = userValidation.getUser(body);
+
+            // if (validate.error) {
+            //     throw new Error(validate.error.message);
+            // }
+            let user: any;
+            getUserByEmail(body.EmailID, body.Password).then(
+            async (result: any) => {
+                    if(result.length){
+                        user = result[0]
+                        isMatched = userValidation.comparePassword(body.Password, user.Password)
+                        if(isMatched){ return Promise.resolve(user); }
+                        else{ throw new Error('Invalid password or email'); }
+                        
+                    }
+                    else{
+                        throw new Error('Enter a registered email address');
+                    }
+                })
+                .catch((err: any) => {
+                    console.log(err)
+                })
+              
+        } catch (error) {
+            throw new Error(error);
+        }
+}
+
+export async function getUserByEmail(email: string, password: string): Promise < any > {
+    
+    const poolConnect = await db.connect();
+    try{
+        const result = await poolConnect.request()
+            .input('EmailID', email)
+            .input('Password', password)
+            .execute('SP_MstUserLoginData')
+           
+        return Promise.resolve(result.recordset[0]);
+    }
+    catch(e){
+        return Promise.reject(e);
+    }
+    finally{
+        poolConnect.close();
+    }
+}
+

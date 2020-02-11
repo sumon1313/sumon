@@ -1,0 +1,70 @@
+{
+  "_from": "@types/yeoman-generator@3.1.0",
+  "_id": "@types/yeoman-generator@3.1.0",
+  "_inBundle": false,
+  "_integrity": "sha512-76GGwUVowP2SX+1B+xRPBV8mPKfbrUXHYpYECACT19F4KsB7h+HPAeQwcD9yaJeAzvtnrQhiuWGTIOBDHKj70A==",
+  "_location": "/@types/yeoman-generator",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@types/yeoman-generator@3.1.0",
+    "name": "@types/yeoman-generator",
+    "escapedName": "@types%2fyeoman-generator",
+    "scope": "@types",
+    "rawSpec": "3.1.0",
+    "saveSpec": null,
+    "fetchSpec": "3.1.0"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@types/yeoman-generator/-/yeoman-generator-3.1.0.tgz",
+  "_shasum": "51642d7e6ec1b1c67707ab9df17e78f7b5d33210",
+  "_spec": "@types/yeoman-generator@3.1.0",
+  "_where": "/home/amal/Javascript/Express/jwtTypescriptApi",
+  "bugs": {
+    "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Kentaro Okuno",
+      "url": "https://github.com/armorik83"
+    },
+    {
+      "name": "Jay Anslow",
+      "url": "https://github.com/janslow"
+    },
+    {
+      "name": "Ika",
+      "url": "https://github.com/ikatyang"
+    },
+    {
+      "name": "Joshua Cherry",
+      "url": "https://github.com/tasadar2"
+    },
+    {
+      "name": "Arthur Corenzan",
+      "url": "https://github.com/haggen"
+    }
+  ],
+  "dependencies": {
+    "@types/inquirer": "*"
+  },
+  "deprecated": false,
+  "description": "TypeScript definitions for yeoman-generator",
+  "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped#readme",
+  "license": "MIT",
+  "main": "",
+  "name": "@types/yeoman-generator",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DefinitelyTyped/DefinitelyTyped.git"
+  },
+  "scripts": {},
+  "typeScriptVersion": "2.3",
+  "types": "index",
+  "typesPublisherContentHash": "b0ebb3e0c6d02336da71cc6d16bcfc9b86b3daff2027a297ce555ddaea088c6c",
+  "version": "3.1.0"
+}

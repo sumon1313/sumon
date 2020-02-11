@@ -1,0 +1,52 @@
+{
+  "_from": "@types/ejs@2.6.1",
+  "_id": "@types/ejs@2.6.1",
+  "_inBundle": false,
+  "_integrity": "sha512-WD8015V8Y+uDfFIjiVHU7t9SgHptqTGGN8w0A2LcrL0NLtqColM15cswkHZMUfodyuTf35sup8vW0hpWRHu0dQ==",
+  "_location": "/@types/ejs",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@types/ejs@2.6.1",
+    "name": "@types/ejs",
+    "escapedName": "@types%2fejs",
+    "scope": "@types",
+    "rawSpec": "2.6.1",
+    "saveSpec": null,
+    "fetchSpec": "2.6.1"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@types/ejs/-/ejs-2.6.1.tgz",
+  "_shasum": "cf9cd850a0fd3a55fc4813c97efb0b6503c6f4e6",
+  "_spec": "@types/ejs@2.6.1",
+  "_where": "/home/amal/Javascript/Express/jwtTypescriptApi",
+  "bugs": {
+    "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Ben Liddicott",
+      "url": "https://github.com/benliddicott"
+    }
+  ],
+  "dependencies": {},
+  "deprecated": false,
+  "description": "TypeScript definitions for ejs.js",
+  "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped#readme",
+  "license": "MIT",
+  "main": "",
+  "name": "@types/ejs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DefinitelyTyped/DefinitelyTyped.git"
+  },
+  "scripts": {},
+  "typeScriptVersion": "2.4",
+  "types": "index",
+  "typesPublisherContentHash": "0c3684708d3888990345e27e1537e728a3ad9c553cf9c28a62e02e5a6d72319c",
+  "version": "2.6.1"
+}

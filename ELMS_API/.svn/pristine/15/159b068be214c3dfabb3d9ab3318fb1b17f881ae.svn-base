@@ -1,0 +1,62 @@
+{
+  "_from": "joi@14.3.0",
+  "_id": "joi@14.3.0",
+  "_inBundle": false,
+  "_integrity": "sha512-0HKd1z8MWogez4GaU0LkY1FgW30vR2Kwy414GISfCU41OYgUC2GWpNe5amsvBZtDqPtt7DohykfOOMIw1Z5hvQ==",
+  "_location": "/joi",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "joi@14.3.0",
+    "name": "joi",
+    "escapedName": "joi",
+    "rawSpec": "14.3.0",
+    "saveSpec": null,
+    "fetchSpec": "14.3.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/joi/-/joi-14.3.0.tgz",
+  "_shasum": "55f7c5caa8256de74ccb12eb22ab1c19eea02db3",
+  "_spec": "joi@14.3.0",
+  "_where": "/home/amal/Javascript/Express/jwtTypescriptApi",
+  "bugs": {
+    "url": "https://github.com/hapijs/joi/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "hoek": "6.x.x",
+    "isemail": "3.x.x",
+    "topo": "3.x.x"
+  },
+  "deprecated": "This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).",
+  "description": "Object schema validation",
+  "devDependencies": {
+    "code": "5.x.x",
+    "hapitoc": "1.x.x",
+    "lab": "18.x.x"
+  },
+  "homepage": "https://github.com/hapijs/joi",
+  "keywords": [
+    "hapi",
+    "schema",
+    "validation"
+  ],
+  "license": "BSD-3-Clause",
+  "main": "lib/index.js",
+  "name": "joi",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hapijs/joi.git"
+  },
+  "scripts": {
+    "test": "lab -t 100 -a code -L",
+    "test-cov-html": "lab -r html -o coverage.html -a code",
+    "test-debug": "lab -a code",
+    "toc": "hapitoc && node docs/check-errors-list.js",
+    "version": "npm run toc && git add API.md README.md"
+  },
+  "version": "14.3.0"
+}

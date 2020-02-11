@@ -1,0 +1,52 @@
+#can be 'development' or 'production'
+NODE_ENV=production
+
+#your app port
+PORT=3000
+
+#### It can be mssql,mongodb, mysql
+DATABASE_TYPE=mssql
+
+####################################################
+#your mongo connection options
+MONGODB_URI=mongodb://127.0.0.1:27017/
+MONGODB_DB_MAIN=users_db
+
+####################################################
+#mssql connection options
+#Dialects://Username:password@host:port/database
+
+MSSQL_URI=mssql://sa:sql2017DB@192.168.1.130\\MSSQLSERVER2017:1433
+MSSQL_DB=VCA
+
+#MSSQL_HOST=localhost
+#MSSQL_USER=SA
+#MSSQL_PASS=password
+
+
+####################################################
+#psql connection options
+PSQL_URI='postgresql://amal:lea@localhost:5432/users_db'
+PSQL_DB=users_db
+
+#PSQL_HOST=localhost
+#PSQL_PORT=5432
+#PSQL_USER=root
+#PSQL_PASS=password
+#PSQL_DB=users_db
+
+
+####################################################
+#mysql connection options
+
+#MYSQL_HOST=localhost
+#MYSQL_USER=root
+#MYSQL_PASS=password
+
+
+
+
+############################
+SECRET=d29570e8d827e08023106640d6994dfcc56967a4
+
+
